@@ -486,17 +486,34 @@ body.light-mode {
     --text-color: #151414;
     --main-color: #ff014f;
 }
-#theme-toggle { width: 76px; height: 42px; padding: 4px; display: inline-flex; align-items: center; justify-content: flex-start;
-background: var(--second-bg-color);
-border: 1px solid #555;
-border-radius: 50px;
-cursor: pointer;
-transition: background 0.3s ease;}
-#theme-toggle i { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;
-border-radius: 50%;
-background: var(--main-color);
-color: #fff;
-font-size: 20px;
-transition: transform 0.3s ease;}
-body.light-mode #theme-toggle { justify-content: flex-end; }
-#theme-toggle:hover { box-shadow: 0 0 12px var(--main-color); }
+#theme-toggle { 
+    width: 76px; 
+    height: 42px; 
+    padding: 4px; 
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: flex-start;
+    background: var(--second-bg-color);
+    border: 1px solid #555;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+#theme-toggle i { 
+    width: 32px; 
+    height: 32px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+body.light-mode #theme-toggle { 
+    justify-content: flex-end;
+}
+#theme-toggle:hover { 
+    box-shadow: 0 0 12px var(--main-color); 
+}

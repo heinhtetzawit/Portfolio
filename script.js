@@ -9,22 +9,13 @@ menuIcon.onclick =  ()  => {
 
 const themeToggle = document.querySelector('#theme-toggle');
 function updateThemeIcon() { const isLight = document.body.classList.contains('light-mode');
-themeToggle.innerHTML = isLight
-    ? '<i class="bx bx-sun"></i>'
-    : '<i class="bx bx-moon"></i>';
+themeToggle.innerHTML = isLight? '<i class="bx bx-sun"></i>': '<i class="bx bx-moon"></i>';
 
-themeToggle.setAttribute(
-    'aria-label',
-    isLight ? 'Switch to dark mode' : 'Switch to light mode'
-);}
+themeToggle.setAttribute('aria-label',isLight ? 'Switch to dark mode' : 'Switch to light mode');}
+
 updateThemeIcon();
 themeToggle.addEventListener('click', () => { document.body.classList.toggle('light-mode');
-const isLight =
-    document.body.classList.contains('light-mode');
+const isLight = document.body.classList.contains('light-mode');
 
-localStorage.setItem(
-    'theme',
-    isLight ? 'light' : 'dark'
-);
-
+localStorage.setItem('theme',isLight ? 'light' : 'dark');
 updateThemeIcon();});
